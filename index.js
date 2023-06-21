@@ -8,7 +8,7 @@ app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
     res.setHeader('Access-Control-Allow-Origin', 'https://snake-react-nu.vercel.app');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE'); // Додайте PUT до дозволених методів
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
     next();
 });
 app.use(express.json());
